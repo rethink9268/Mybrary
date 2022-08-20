@@ -20,8 +20,11 @@
     "filepond-plugin-file-encode": "^2.1.10",
     "filepond-plugin-image-preview": "^4.6.11",
     "filepond-plugin-image-resize": "^2.0.10",
+    "install": "^0.13.0",
     "mime-types": "^2.1.35",
-    "mongoose": "^6.5.2"
+    "mongoose": "^6.5.2",
+    "uninstall": "^0.0.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",

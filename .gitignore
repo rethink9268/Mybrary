@@ -1,3 +1,4 @@
 .env
 node_modules
-public/uploads
+yarn.lock
+# mybrary-rethink9268
