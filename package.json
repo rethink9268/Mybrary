@@ -21,6 +21,7 @@
     "filepond-plugin-image-preview": "^4.6.11",
     "filepond-plugin-image-resize": "^2.0.10",
     "install": "^0.13.0",
+    "method-override": "^3.0.0",
     "mime-types": "^2.1.35",
     "mongoose": "^6.5.2",
     "uninstall": "^0.0.0",
