@@ -47,3 +47,33 @@
 .btn_row > *:first-child {
   margin-left: 0;
 }
+.book_details {
+  display: flex;
+}
+.book_details_label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-items: flex-start;
+}
+.book_details_grid {
+  display: grid;
+  align-content: flex-start;
+  align-items: center;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto;
+}
+.book_details_btn_grid {
+  display: grid;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  grid-template-areas:
+    "edit delete"
+    "author author";
+  grid-gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.book_details_author_btn {
+  grid-area: author;
+  justify-self: stretch;
+}

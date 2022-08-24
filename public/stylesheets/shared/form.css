@@ -1,0 +1,70 @@
+:root {
+  --form-label-font-size: 1.2rem;
+  --form-input-border-color: hsl(var(--color-base-hue), 100%, 50%);
+  --form--input-bg-color: hsl(var(--color-base-hue), 100%, 31%);
+  --form-input-border-color-light: hsl(var(--color-base-hue), 100%, 80%);
+}
+
+.form_row {
+  display: flex;
+  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.form_row_end {
+  justify-content: flex-end;
+}
+.form_item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-left: 2rem;
+}
+.form_item:first-child {
+  margin-left: 0;
+}
+.form_item_no_grow {
+  flex-grow: 0;
+}
+.form_item > label {
+  font-size: var(--form-label-font-size);
+  margin-bottom: 0.25rem;
+}
+.form_item input,
+.form_item select,
+.form_item textarea {
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--form-input-border-color);
+  background: var(--form--input-bg-color);
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Gotham Rounded";
+  outline: none;
+}
+.form_item input:focus,
+.form_item select:focus,
+.form_item textarea:focus {
+  border-color: var(--form-input-border-color-light);
+}
+.form_item textarea {
+  height: 100%;
+  resize: none;
+}
+.form_item select option {
+  background-color: black;
+}
+.filepond--root {
+  font-family: "Gotham Rounded";
+  margin-bottom: 0;
+}
+.filepond--panel-root {
+  background: var(--form--input-bg-color);
+  border: 1px solid var(--form-input-border-color);
+}
+.filepond--drop-label {
+  color: var(--color-text-light);
+  font-size: inherit;
+}

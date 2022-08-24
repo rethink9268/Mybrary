@@ -1,0 +1,32 @@
+:root {
+  --book-cover-width: 200px;
+  --book-cover-width-large: 320px;
+  --book-cover-aspect-ratio: 0.75;
+}
+.book-cover {
+  width: var(--book-cover-width);
+  height: calc(var(--book-cover-width) / var(--book-cover-aspect-ratio));
+  border-radius: 10px;
+}
+
+.book-cover-large {
+  width: var(--book-cover-width-large);
+  height: calc(var(--book-cover-width-large) / var(--book-cover-aspect-ratio));
+}
+.book-grid {
+  display: grid;
+  justify-content: center;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, var(--book-cover-width));
+  margin-top: 2rem;
+}
+.book-grid-large {
+  grid-template-columns: repeat(auto-fill, var(--book-cover-width-large));
+}
+.book-item {
+  position: relative;
+}
+.book-title {
+  text-align: center;
+  margin-top: 0.5rem;
+}

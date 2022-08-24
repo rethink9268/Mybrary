@@ -1,16 +1,24 @@
 <h2 class="page_header">Search Authors</h2>
 <form action="/authors" method="GET">
-  <label>Name</label>
-  <input type="text" name="name" value="<%=searchOptions.name%>" />
-  <button class="btn btn-primary" type="submit">Search</button>
+  <div class="form_row">
+    <div class="form_item">
+      <label>Name</label>
+      <input type="text" name="name" value="<%=searchOptions.name%>" />
+    </div>
+  </div>
+  <div class="form_row form_row_end">
+    <button class="btn btn-primary" type="submit">Search</button>
+  </div>
 </form>
 <br />
 <% authors.forEach(author => { %>
-<div><%=author.name%></div>
-<div class="btn_row">
-  <a class="btn btn-primary" href="/authors/<%=author.id%>">View</a>
-  <a class="btn btn-primary" href="/authors/<%=author.id%>/edit">Edit</a>
-  <%-include('../partials/deleteForm', {url: `/authors/${author.id}`})%>
+<div class="author_row">
+  <div class="author_name"><%=author.name%></div>
+  <div class="btn_row">
+    <a class="btn btn-primary" href="/authors/<%=author.id%>">View</a>
+    <a class="btn btn-primary" href="/authors/<%=author.id%>/edit">Edit</a>
+    <%-include('../partials/deleteForm', {url: `/authors/${author.id}`})%>
+  </div>
 </div>
 
 <% }) %>
